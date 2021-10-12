@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.heading{
+    padding: 5px;
+    margin-top: 20px;
+}
+#productList{
+    background-color:rgb(241, 240, 236);
+    width:70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.btnDelete{
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 40px;
+   
+}
+.btnDelete:hover{
+    background-color: #e5ab99;
+}
+.btnDelete:active{
+    background-color: red;
+}
+.btnEdit{
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 40px; 
+}
+.btnEdit:hover{
+    background-color: #FFFF99;
+}
+.btnEdit:active{
+    background-color:yellow;
+}
+
+th{
+    border: 1px solid black;
+    text-align: center;
+}
+td{
+    text-align: center;
+}
+.footer {
+    width: 100%;
+    margin-top: 140px;
+}

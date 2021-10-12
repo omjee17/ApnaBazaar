@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script  async defer src="./shop.js"></script>
+    <script async defer src="./add_products.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>MyShop👓:Add Product</title>
+</head>
+<body>
+    
+    <div class="p-4">
+      <button><a href="./edit_products.html">Edit Product</a></button>
+        <h3 class="text-center">Add product</h3>
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col -6">
+                <form id="productForm">
+                    <div class="from-group">
+
+                    <label for="productCategory">Product Category</label>
+                    <select class="form-select" id="productCategory">
+                        <option value="Smartphone" selected>Smartphone</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="fashion">Fashion</option>
+                      </select>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="productName">Product Name</label>
+                        <input class="form-control" type="text" id="productName">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="productManufacturer">Manufacturer</label>
+                        <input class="form-control" type="text" id="productManufacturer">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="productPrice">Price</label>
+                        <input class="form-control" type="number" id="productPrice">
+                    </div>
+                    <div class="form-group">
+                        <label for="productImage">Image</label>
+                        <input class="form-control" type="text" id="productImage">
+                    </div>
+                </form>
+                <button id="btnProductAdd" class="btn btn-secondary my-2">Add</button>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="space text-center color2bg color1txt" style="padding-top: 40px;">
+        <div class="row">
+    
+          <div class="col-md-3">
+              <h5>Know About Us</h5>
+               
+                 <p><a href="#" class="footer-link">About Us</a></p>
+                 <p><a href="#" class="footer-link">Contact Us</a></p>
+                 <p><a href="#" class="footer-link">Services</a></p>
+                 <p><a href="#" class="footer-link">Help Center</a></p>
+            
+          </div>
+
+
+          <div class="col-md-3">
+            <h5>Connect With Us</h5>
+             
+               <p><a href="#" class="footer-link">Facebook</a></p>
+               <p><a href="#" class="footer-link">Instagram</a></p>
+               <p><a href="#" class="footer-link">Twitter</a></p>
+               <p><a href="#" class="footer-link">LinkedIn</a></p>
+
+          </div>
+         
+          <div class="col-md-3" >
+
+            <h5 class="d-inline">MyShop</h5>
+            <img src="./navLogo.png" alt="logo" height="30px">
+            <ul style="text-align: left; list-style-type: none;">
+            <li>
+              Address: Vaishali,Ghazibad-201010
+              Uttar Pradesh
+            </li>
+            <li >
+              Phone no.-00000000000
+            </li>
+            <li>
+              Email-random@myshop.com
+            </li>
+          </ul>
+
+          </div>
+          
+          <div class="col-md-3">
+            <h5>Help Us Improve</h5>
+            <textarea name="feedback" id="textareaFeedback" cols="30" rows="7" placeholder="Let us know what went well or what we can improve."></textarea>
+
+          </div>
+            
+          <div class="col-12 text-center">
+              <hr class="light-100">
+              <h5>&copy; MyShop</h5>
+          </div>
+        </div>
+    </div>
+
+</footer>
+
+
+
+</body>
+</html>

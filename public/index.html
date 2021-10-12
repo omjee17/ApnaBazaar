@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>    <script src="./shop.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <script src="./index.js"></script>
+    
+    <title>MyShop👓</title>
+</head>
+<body>
+ 
+        <!-- Navbar -->
+        
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <div style="width: 70%;">
+            <a class="navbar-brand color1txt"> 
+              <img src="./navLogo.png" width="35" height="35" class="d-inline-block align-text-top">
+              MyShop
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav"  style="width: 30%; text-align: center;" >
+              
+                <!-- Cart -->
+                <div class="btn-group d-inline space">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    Cart
+                  </button>
+                  <ul class="dropdown-menu" id="dropdownCart">
+                   <!-- Products added in Cart -->
+                    <li id="totalPrice">
+                       <!-- Total Price display -->
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Wishlist -->
+                <div class="btn-group d-inline space">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    Wishlist
+                  </button>
+                  <ul class="dropdown-menu" id="dropdownWishlist" >
+                        <!--Wishlisted Product  -->
+                  </ul>
+                </div>
+                <!-- Add new product -->
+                <div class="btn-group d-inline space">
+                  <a class="btn btn-secondary" href="./add_products.html" target="_blank" role="button">Add Product</a>
+                </div>
+
+
+            </div>
+          </div>
+        </nav>
+
+
+        <!-- Image Slider -->
+        <div id="carouselExampleControls" class="sildeItem carousel slide" data-bs-ride="carousel" style="margin-top:5px">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/slider/category1.jpg" style="object-fit: cover;" class="sildeItem d-block w-100" alt="categorySlide1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider/category2.jpg" style="object-fit: cover;" class="sildeItem d-block w-100" alt="categorySlide2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider/category3.jpg" style="object-fit: cover;" class="sildeItem d-block w-100" alt="categorySlide3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    
+
+          <!-- Heading Bar -->
+
+          <h2 class="text-center fw-bold" style="margin-top: 50px;">Why MyShop?</h2>
+          <nav class="navbar color2bg" style="margin-top: 40px;">
+            <div class="container-fluid headingBar" >
+              <span><img src="./images/heading bar/Free_delivery_img.png" alt="Free Delivery Feature" height="60px"> Free delivery</span>
+              <span><img src="./images/heading bar/easy_return_img.png" alt="Easy Return Feature" height="60px"> Easy Return</span>
+              <span><img src="./images/heading bar/Secure_payment_img.png" alt="Secure Payment" height="50px"> Secure Payment</span>
+              <span><img src="./images/heading bar/CashbackandReward_img.png" alt="Cashback and Rewards Feature" height="70px"> Cashback and Rewards</span>
+            </div>
+          </nav>
+
+
+        <!-- Category -->
+        <ul class="tabrow">
+          <li id="liLaptop" ><span>Laptop</span></li>
+            <li class="selected" id="liSmartphone"><span>Smartphone</li>
+          <li id="liFashion"><span>Fashion</span></li>
+        </ul>
+    
+
+        <!-- product -->
+
+        <div class="container">
+          <div class="row"  id="product-list" >
+
+
+            <!-- Product Card Example -->
+            <!-- <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img src="https://assets.swappie.com/iPhone-X-64GB-Silver-1-1-1-1.png" alt="Product" class="img-responsive">
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>Iphone X</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Apple</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="wcf-left"><span class="price">Rs.100000</span></div>
+                    <div class="wcf-right"><a class="buy-btn m" id="1"><i class="fa fa-shopping-cart"></i></a></div>
+                    <div class="wcf-right"><a class="wish-btn m"><i class="fa fa-heart"></i></a></div>
+                    <div class="wcf-right"><a class="share-btn m"><i class="fas fa-share"></i></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+
+            </div>
+            </div>
+
+            
+
+
+        
+
+        <!-- Footer -->
+        <footer class="space text-center color2bg color1txt" style="padding-top: 40px;">
+              <div class="row">
+          
+                <div class="col-md-3">
+                    <h5>Know About Us</h5>
+                     
+                       <p><a href="#" class="footer-link">About Us</a></p>
+                       <p><a href="#" class="footer-link">Contact Us</a></p>
+                       <p><a href="#" class="footer-link">Services</a></p>
+                       <p><a href="#" class="footer-link">Help Center</a></p>
+                  
+                </div>
+
+
+                <div class="col-md-3">
+                  <h5>Connect With Us</h5>
+                   
+                     <p><a href="#" class="footer-link">Facebook</a></p>
+                     <p><a href="#" class="footer-link">Instagram</a></p>
+                     <p><a href="#" class="footer-link">Twitter</a></p>
+                     <p><a href="#" class="footer-link">LinkedIn</a></p>
+
+                </div>
+               
+                <div class="col-md-3 address" >
+
+                  <h5>MyShop</h5>
+                  <img src="./navLogo.png" alt="logo" height="30px">
+                  <ul style="text-align: left; list-style-type: none;">
+                  <li>
+                    Address: Vaishali,Ghazibad-201010
+                    Uttar Pradesh
+                  </li>
+                  <li >
+                    Phone no.-00000000000
+                  </li>
+                  <li>
+                    Email-random@myshop.com
+                  </li>
+                </ul>
+
+                </div>
+                
+                <div class="col-md-3">
+                  <h5>Help Us Improve</h5>
+                  <textarea name="feedback" id="textareaFeedback" cols="25" rows="7" placeholder="Let us know what went well or what we can improve."></textarea>
+
+                </div>
+                  
+                <div class="col-12 text-center">
+                    <hr class="light-100">
+                    <h5>&copy; MyShop</h5>
+                </div>
+              </div>
+          </div>
+  
+      </footer>
+
+</body>
+</html>
